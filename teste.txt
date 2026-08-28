@@ -1,0 +1,40 @@
+ID   STATUS ESPERADO   URL
+---------------------------------------------------------------------------
+1    PASS   VÁLIDO     ftp://api.sub.domain.net#section1
+2    PASS   INVÁLIDO   http://example.com/caminho com espaço
+3    PASS   VÁLIDO     ftp://example.com:3000/docs
+4    PASS   VÁLIDO     example.com:3000?id=123#top
+5    PASS   VÁLIDO     ftp://api.sub.domain.net?search=test&page=2#section1
+6    PASS   VÁLIDO     https://api.sub.domain.net:443/docs?search=test&page=2#section1
+7    PASS   VÁLIDO     api.sub.domain.net#section1
+8    PASS   INVÁLIDO   apenas_texto_sem_ponto
+9    PASS   INVÁLIDO   https://api.sub.domain.net?parametro_sem_igual
+10   PASS   VÁLIDO     example.com:3000/api/v1/users
+11   PASS   VÁLIDO     https://example.com/images/logo.png?id=123#top
+12   PASS   VÁLIDO     http://api.sub.domain.net/index.html#top
+13   PASS   VÁLIDO     http://api.sub.domain.net:443?sort=asc&filter=all
+14   PASS   VÁLIDO     site.org.br?sort=asc&filter=all
+15   PASS   VÁLIDO     example.com:80?sort=asc&filter=all
+---------------------------------------------------------------------------
+Total: 15/15 testes passaram.
+
+
+ID   STATUS ESPERADO   URL
+---------------------------------------------------------------------------
+1    PASS   INVÁLIDO   http://example.com?parametro_sem_igual
+2    PASS   VÁLIDO     ftp://site.org.br#top
+3    PASS   VÁLIDO     ftp://api.sub.domain.net:8080
+4    PASS   INVÁLIDO   https://example.com?parametro_sem_igual
+5    PASS   VÁLIDO     http://example.com/docs?sort=asc&filter=all
+6    PASS   VÁLIDO     site.org.br/index.html?search=test&page=2
+7    PASS   VÁLIDO     example.com:3000
+8    PASS   VÁLIDO     http://api.sub.domain.net:443
+9    PASS   INVÁLIDO   ftp://site.org.br/caminho com espaço
+10   PASS   INVÁLIDO   ftp://site.org.br/caminho com espaço
+11   PASS   VÁLIDO     site.org.br:3000/api/v1/users#footer
+12   PASS   VÁLIDO     https://example.com:8080/index.html#footer
+13   PASS   INVÁLIDO   gopher://site.org.br
+14   PASS   VÁLIDO     site.org.br/api/v1/users?sort=asc&filter=all#section1
+15   PASS   INVÁLIDO   apenas_texto_sem_ponto
+---------------------------------------------------------------------------
+Total: 15/15 testes passaram.
