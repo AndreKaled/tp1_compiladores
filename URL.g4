@@ -4,7 +4,7 @@ URL: PROTOCOLO? DOMINIO PORTA? CAMINHO? QUERY? FRAGMENTO?;
 
 PROTOCOLO: 'http://' | 'https://' | 'ftp://';
 
-DOMINIO: [a-zA-Z]+ ('.' [a-zA-Z]+)+;
+DOMINIO: [a-zA-Z]+ ('.' [a-zA-Z]+)*;
 
 CAMINHO: ('/' [a-zA-Z0-9._-]+)+;
 
